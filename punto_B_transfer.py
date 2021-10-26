@@ -7,16 +7,16 @@ from sympy.solvers.ode.ode import dsolve
 import matplotlib.pyplot as plt
 import numpy as np
 
-p = 1.1e3                            #Densidad de la capa (shell)
-l = 1e-3                             #Altura de la capa(shell)
 A = 3e-4                             #Área de la base de la capa(shell)
+l = 1e-3                             #Altura de la capa(shell)
 Ce = 3.726                           #Calor específico de la capa (shell)
-Tc = 37                              #Temperatura núcleo(core).
+p = 1.1e3                            #Densidad de la capa (shell)
 tao = 60                             #Tao = 60 s ––––> 1 min
+Tc = 37                              #Temperatura núcleo(core).
 To = 35                              #–––> Coindición iniicial (CI) #Temperatura de la capa (shell) con t = 0.
 Ta = 23                              #Temperatura ambiente.
-ko = 20                              #Coeficiente de transmision de calor núcleo-capa inicial.
 h = 20                               #Coeficiente de transmision de calor piel(skin)-aire.
+ko = 20                              #Coeficiente de transmision de calor núcleo-capa inicial.
 
 # Planteamiento y solución de la EDO (Ecuacion diferencial ordinaria)
 t = symbols("t")
